@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="top"></div>
+<!--ID=内容外包装，class=行-->
+<div id="content-wrapper" class="row">
+    <!--class=小的隐藏，中等的显示，中等为2行-->
+    <div class="hide-for-small show-for-medium medium-2 columns" >
+        <!--ID=侧边栏，data-*,自定义属性，此例定义了id为sidebar的div元素的data-sticky-container属性-->
+        <div id="sidebar" data-sticky-container>
+            <!--nav 标签描绘一个含有多个超链接的区域，向网页的导航栏一类，样式为相对于父元素100%，自定义属性data-margin-top=10.-->
+            <nav class=" sticky" style="width:100%" data-sticky data-margin-top="10">
+                <!--class=垂直菜单-->
+                <ul class="vertical menu">
+                    <!--注意！href="#who",表示指向本页面中的锚点，-->
+                    <!--绝对 URL - 指向另一个站点（比如 href="http://www.example.com/index.htm"）-->
+                    <!--相对 URL - 指向站点内的某个文件（href="index.htm"）-->
+                    <!--锚 URL - 指向页面中的锚（href="#top"）-->
+                    <li><a id="who-link" href="#who">who is linus torvalds</a></li>
+                    <li><a id="what-link" href="#what">why is he famous </a></li>
+                    <li><a id="where-link" href="#where">where is he now</a></li>
+                    <li><a id="microsoft-link" href="#microsoft">what about microsoft</a></li>
+                    <!--&符号的写法为 &amp-->
+                    <li><a id="awards-link" href="#awards">awards &amp; achievements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--class=小的为12，中为10行，啥意思？？-->
+    <div class="small-12 medium-10 columns">
+        <header>
+            <div class="small-6 columns text-left">
+                <a href="//ogzcoder.com" target="_blank">ogzcoder</a>
+            </div>
+            <div class="small-6 columns text-right">
+                <a href="//www.facebook.com/ogzcoder/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="//twitter.com/ogzcoder" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="//github.com/ogzcoder" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="//codepen.io/ogzcoder" target="_blank"><i class="fa fa-codepen"></i></a>
+                <a href="//stackoverflow.com/users/5831695/ogzcoder" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+        </header>
+        <div id="content" class="content">
+            <div class="hero">
+                <img src="//projects.ogzcoder.com/img/lt/header-bg.jpg" alt="" />
+                <div id="visible-button" class="hero-text">
+                    <h2><i class="fa fa-quote-left"></i> My name is Linus,<br> and I am your God <i class="fa fa-quote-right"></i></h2>
+                    <cite class="lead">Linus Torvalds</cite>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <section>
+                        <h3 id="who">Who is Linus Torvalds</h3>
+                        <p>Torvalds was born in 1969 and grew up in Helsinki. When he was ten years old he began to dabble in computer programming
+                            on his grandfather's Commodore VIC-20. Once in college Torvalds considered himself such a skilled and experienced
+                            computer programmer that he began the insane task of developing an operating system customizable to meet his
+                            own personal needs and ideas. He was less than satisfied with Microsoft's MS-DOS that shipped with his first
+                            foray into the world of personal computers.
+                        </p>
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i> I'd like to say that I knew this would happen, that it's all part of the plan
+                            for world domination.
+                            <cite>Linus Torvalds</cite>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3 id="what">What is Linus Torvalds Known For</h3>
+                        <p>Linus Torvalds is the creative genius behind the Linux kernel operating system. He wrote it as a part of his
+                            Master’s thesis titled, "Linux: A Portable Operating System" at the young age of 21. The Linux kernal would
+                            one day be the chosen operating system that powers approximately 12% of the worlds computers and an even higher
+                            percentage of the servers currently in use across the internet. Upon the Linux platform, the popular Android
+                            operating system found on the majority of smart phones and tablets, as well as ChromeOS from Google, have been
+                            built. He was also greatly responsible for developing the GIT version control system used by many programmers
+                            to develop and track issues with new and old projects alike.
+                        </p>
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i> Talk is cheap. Show me the code.
+                            <cite>Linus Torvalds</cite>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3 id="where">Where is Linus Torvalds and Linux Now</h3>
+                        <p>I think the best answer to this question comes from a comment made by Tovalds himself, "I was never a 'big thinker'.
+                            One of my philosophies in Linux has always been to not worry about the future too much, but make sure that
+                            we make the best of what we have now - together with keeping our options open for the future and not digging
+                            us into a hole.</p>
+                        <p> And I'm not a big believer in revolutions. What people call revolutions in technology were more of a shift in
+                            perception - from big machines to PC's ,the technology just evolved, and fairly slowly at that, and from PC's
+                            to the internet. The next "revolution" is going to be the same thing - not about the technology itself being
+                            revolutionary, but a shift in how you look at it and how you use it."
+                        </p>
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i> Those that can, do. Those that can't, complain.
+                            <cite>Linus Torvalds</cite>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3 id="microsoft">What About Microsoft</h3>
+                        <p>Windows certainly hasn't disappeared, but it's no longer the only, "gotta have it" platform that it once was.
+                            Even Microsoft is venturing into the world of linux in the developer features of it's latest OS Windows 10,
+                            where the Windows Subsytem for Linux can be found running Linux applications on the Windows platform. Microsoft
+                            has also recently become a part of the Linux Foundation. And in the end has developed the latest .NET libraries,
+                            known as .NET Core, for developers wanting to use programming languages such as Microsoft's C# to build applications
+                            for the Linux desktop as well. A little fun fact in regards to these events can be found in a 1998 (19 Years
+                            Ago) quote from Linus Torvalds himself.
+                        </p>
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i> If Microsoft ever does applications for Linux it means I've won.
+                            <cite>Linus Torvalds</cite>
+                        </blockquote>
+                    </section>
+                    <section class="awards">
+                        <h3 id="awards">Awards &amp; Achievements</h3>
+                        <table class="awards-table">
+                            <tr>
+                                <td align="top">1991</td>
+                                <td width="200">Linux is Born</td>
+                                <td align="top">The original source code for the Linux kernel was released to the public.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">1994</td>
+                                <td align="top">Linux 1.0 Hits the Mainstream</td>
+                                <td align="top">Linux is now a full fledged operating system.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">1995</td>
+                                <td align="top">Running Linux on AlphaStation</td>
+                                <td align="top">In the period 1994–1999 Torvalds developed specialized kernel versions of Linux for early AlphaServer systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="top">1996</td>
+                                <td align="top">The Asteroid</td>
+                                <td align="top">The asteroid 9793 Torvalds was named after the Linux king himself.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">1998</td>
+                                <td align="top">The EFF Pioneer Award</td>
+                                <td align="top">The Electronic Frontier Foundation awards Tovald with the award for people who have made significant contributions
+                                    to the empowerment of individuals in using computers.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2000</td>
+                                <td align="top">The Lovelace Medal</td>
+                                <td align="top">The Lovelace Medal is awarded to those who have advanced information systems or clarified our understanding
+                                    regarding these technologies.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2001</td>
+                                <td align="top">The Takeda Award</td>
+                                <td align="top">The Takeda Award was given to those who encouraged social/economic well-being.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2005</td>
+                                <td align="top">The Vollum Award</td>
+                                <td align="top">The Vollum Award was presented to those with distinguished accomplishment in science and technology.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2008</td>
+                                <td align="top">The Hall of Fellows</td>
+                                <td align="top">Tovald was inducted into the Hall of Fellows of the Computer History Museum in Mountain View, California
+                                    for the creation of the Linux kernel and the management of open source development of the widely used Linux
+                                    operating system.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2010</td>
+                                <td align="top">The C&amp;C Prize</td>
+                                <td align="top">He was awarded the C&amp;C Prize by the NEC Corporation for his contributions to the advancement of the information
+                                    technology industry and the improvement of our lives.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2012</td>
+                                <td align="top">Millenium Technology Prize</td>
+                                <td align="top">Torvalds was declared one of two winners of that year's Millennium Technology Prize, widely described as
+                                    technology's equivalent of the Nobel Prize.</td>
+                            </tr>
+                            <tr>
+                                <td align="top">2012</td>
+                                <td align="top">The Internet Hall of Fame</td>
+                                <td align="top">At the Internet Society's Global INET conference in Switzerland, Tovalds was inducted for his work in computer
+                                    innovation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="top">2014</td>
+                                <td align="top">IEEE Computer Pioneer Award</td>
+                                <td align="top">The Institute of Electrical and Electronics Engineers named Torvalds as the 2014 recipient of the IEEE Computer
+                                    Society's Computer Pioneer Award for his contributions to the concepts and advancements in the field of
+                                    computers as a whole .</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section id="links">
+                        <div class="row text-center">
+                            <div class="small-12 columns">
+                                <h5>Linus Torvalds Related Links</h5>
+                            </div>
+                            <div class="small-12 columns">
+                                <ul class="menu">
+                                    <div class="small-12 medium-4 columns">
+                                        <li><a href="//www.wired.com/2012/03/mr-linux/" target="_blank">King of Geeks</a></li>
+                                    </div>
+                                    <div class="small-12 medium-4 columns">
+                                        <li><a href="//www.ted.com/talks/linus_torvalds_the_mind_behind_linux" target="_blank">@Ted Talks</a></li>
+                                    </div>
+                                    <div class="small-12 medium-4 columns">
+                                        <li><a href="//en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">On Wikipedia</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <footer id="footer">
+                        <div class="small-12 columns">
+                        </div>
+                        <div class="copy">
+                            <i class="fa fa-copyright"></i> 2017 | Written &amp; Coded by Joshua Riddle (aka
+                            <a href="//ogzcoder.com" target="_blank">OGZCoder</a>) |
+                            <a href="//www.facebook.com/ogzcoder/" target="_blank"><i class="fa fa-facebook"></i></a> |
+                            <a href="//twitter.com/ogzcoder" taget="_blank"><i class="fa fa-twitter"></i></a> |
+                            <a href="//github.com/ogzcoder" target="_blank"><i class="fa fa-github"></i></a> |
+                            <a href="//codepen.io/ogzcoder" target="_blank"><i class="fa fa-codepen"></i></a> |
+                            <a href="//stackoverflow.com/users/5831695/ogzcoder" target="_blank"><i class="fa fa-stack-overflow"></i></a>              | All Rights Reserved
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#top" id="top-button" class="button"><span class="fa fa-angle-double-up"></span></a>
+</body>
+</html>
